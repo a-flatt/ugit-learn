@@ -5,6 +5,6 @@ setup (name = 'ugit',
         packages = ['ugit'],
         entry_points = {
             'console_scripts' : [
-                'ugit = ugit.cli:main'
+                'ugit = src.cli:main'
             ]
         })
