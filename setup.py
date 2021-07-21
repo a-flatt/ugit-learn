@@ -1,4 +1,4 @@
-from setuptool import setup
+from setuptools import setup
 
 setup (name = 'ugit',
         version = '1.0',
