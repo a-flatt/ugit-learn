@@ -7,7 +7,7 @@ def main():
 def parse_args():
     parser = argparse.ArgumentParser()
 
-    commands = parser.add_subparers(dest='command')
+    commands = parser.add_subparsers(dest='command')
     commands.required = True
 
     init_parser = commands.add_parser('init')
