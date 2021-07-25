@@ -16,6 +16,7 @@ def write_tree(directory='.'):
             elif entry.is_dir(follow_symlinks=False):
                 type_ = 'tree'
                 oid = write_tree(full)
+            entries.append((entry.name, oid, type_))
 
     tree = ''.join(f'{type_}{oid}{name}\n'
             for name, oid, type_ in sorted(entries))
